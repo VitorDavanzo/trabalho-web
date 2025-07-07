@@ -1,0 +1,98 @@
+*{ 
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+} /*utilizado para resetar a pagina e para ser utilizado o margin e o padding real de cada elemento.....utilizado em todas as páginas*/
+
+html, body {
+    height: 100%;
+    margin:0;
+    padding: 0;
+} /*utilizado para o html pegar toda a altura da página, visando ser aplicado o background, que é em degradê, em toda a página.....utilizado em todas as páginas*/
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(to bottom left, #000000, #280142);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} /*backgound em degrade, sem repetição e fixo. para o o fundo da página ser uma só, sem quebras...utilizado em todas as páginas*/
+
+#nome {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+}/*margin-top -> distancia do header para o topo da página...utilizada em todas as páginas || display 'block' para poder centralizar o link e text decoration 'none' para tirar o sublinhado do link...utilizado em todas as páginas, exceto a página 'index'*/
+
+h1 {
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: -20px;
+} /*a margin-bottom está negativada, para que o 'h1' "DAVANZO" possa ficar mais próximo do 'h1' "VITOR"...utilizado em todas as páginas*/
+
+.roxo {
+    color: #480375;
+    font-size: 80px;
+} /*cor e fonte da classe 'roxo'..utilizado em todas as páginas*/
+
+#menu {
+    display: block;
+    width: 900px;
+    margin: 40px auto 0 auto;
+    text-align: center;
+} /*display 'block' para poder centralizar o link, comprimento pré definido e margin laterais em auto para centralizar...utilizado em todas as páginas, exceto a página 'index'*/
+
+a {
+    text-decoration: none;
+    color: white;
+    margin: 40px 50px 0 50px;
+} /*definoções para a margem dos links 'menu', com a cor branca e sem o sublinhado dos links....utilizado em todas as páginas, exceto a página 'index'*/
+
+a:hover {
+    color: #480375;
+} /*mudança de cor ao passar o mouse sobre os links*/
+
+.ativo {
+    color: #480375;
+} /*mantem o link na cor, como se estivesse selecionado. Serve para informar o usuário em qual página ele se encontra...utilizado em cada uma das páginas referentes*/
+
+#content {
+    width: 1000px;
+    margin: 20px auto 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 50px;
+} /*estilização do 'content', definindo a área utilizada em tela ('width'), as margens para os conteúdos que irão dentro dele, borda e cor de fundo...utilizada em todas as páginas, exceto a página 'index'*/
+
+h2 {
+    color: #480375;
+    font-size: 35px;
+    margin: 20px 0 20px 0;
+    text-align: center;
+} /*estilização do 'h2'*/
+
+h5 {
+    color: #480375;
+    font-size: 25px;
+    text-align: center;
+} /*estilização do 'h5'*/
+
+.pcenter {
+    text-align: center;
+}/*estilização da classe 'pcenter' para centralizar o texto*/
+
+p {
+    text-align: justify;
+    margin: auto 20px 20px 20px;
+}/*estilização do paragrafo (p)*/
+
+b {
+    color: #480375;
+}/*estilização do <b> 'bolder', para destacar o elemento dentro do paragrafo*/
+
+#footer {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    margin-top: 25px;
+} /*propriedades de estilização do footer...utilizado em todas as páginas*/
