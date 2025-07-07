@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Trabalho Web (Vitor Sales Davanzo - 4975058)</title><!--Título da aba do navegardor-->
+
+    <link rel="stylesheet" href="css/stylecontato.css"><!--link com o arquivo CSS-->
+</head>
+<body>
+    <a id="nome" href="index.html"><!--Cabeçalho com o meu nome, usado como um header e um link para retornar na 'home'-->
+         <h1>VITOR </h1>
+         <h1><span class="roxo">DAVANZO</span></h1><!--um span para diferenciar um dos 'h1' na classe 'roxo'-->
+    </a>
+
+    <div id="menu"><!--div 'menu' com os links que selecionam as páginas propostas no trabalho'...utilizada em todas as páginas, exceto a pagina 'home'-->
+        <a href="sobre.html">SOBRE MIM</a>
+        <a href="formacao.html">FORMAÇÃO</a>
+        <a href="portifolio.html">PORTIFÓLIO</a>
+        <a class = "ativo" href="contato.html">CONTATO</a><!--criada a classe 'ativo' pra deixar selecionado a página atual-->
+    </div>
+
+    <div id="content"><!--um id 'content' onde limita o espaço que será incluído o conteudo das páginas...utilizado em todas as páginas, exceto a página 'home'-->
+        <h2>CONTATO</h2>
+        
+        <div class="paragrafo"><!--a div com a classe 'paragrafo' foi criada ara conseguir distanciar esse bloco dos demais-->
+            <p>Gostou do meu trabalho?</p>
+            <p>Preencha os campos abaixo, me fale o que você está buscando e logo mais entrarei em contato!</p>
+        </div>
+
+        <form><!--criação de um formulário-->
+            <fieldset><!--para criar uma margem no fomulário-->
+                <div class="campo"><!--utilizando div para poder distanciar os elementos-->
+                    <label for="name">Nome:</label><br><!--utilizando <br> para poder separar o 'Nome:' do input-->
+                    <input type="text" id="name" placeholder="Nome completo"><!--input com id para estilização e placeholder para informar o conteúdo ao usuário-->
+                </div>
+                <div class="campo">
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" placeholder="Seu melhor e-mail">
+                </div>
+                <div class="campo">
+                    <label for="comments">O que está buscando?</label><br>
+                    <textarea id="comments" rows="10" cols="60" placeholder="Digite aqui..."></textarea><!--os atributos rows e cols é para definir o tamanho da caixa de texto-->
+                </div>
+                <button onclick="alert('MENSAGEM ENVIADA')">Enviar mensagem</button><!--o atributo onclick com o alerta, faz aparecer uma janela para o usuário com o texto colocado no alert-->
+            </fieldset>
+        </form> 
+    </div>
+
+    <div id="footer"><!--utilização do footer para identificação do RU...utilizado em todas as paginas-->
+         RU 4975058
+    </div>
+</body>
+</html>
